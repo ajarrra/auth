@@ -2,10 +2,12 @@ function generateRandomCode() {
     return Math.floor(1000 + Math.random() * 9000);
 }
 
+
 function authenticate() {
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
 
+   
     // Проверка наличия введенных данных (в реальном приложении лучше делать на стороне сервера)
     if (email && password) {
         // Генерация случайного кода
@@ -18,6 +20,8 @@ function authenticate() {
         alert('Введите email и пароль');
     }
 }
+
+
 
 
 function sendCodeToEmail(email, confirmationCode) {
